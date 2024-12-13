@@ -23,6 +23,9 @@ func main() {
 
 	// Dijkstra's Algorithm Example
 	runDijkstra()
+
+	// Greedy Algorithm Example
+	runGreedyAlgorithm()
 }
 
 // runBinarySearch demonstrates the binary search algorithm
@@ -81,4 +84,16 @@ func runDijkstra() {
 	}
 	result := internal.Dijkstra(network, "A", "F")
 	fmt.Println("Dijkstra Result:", result)
+}
+
+// runGreedyAlgorithm demonstrates an example of Greedy algorithm
+func runGreedyAlgorithm() {
+	cities := map[string]map[string]int{
+		"Niterói":        {"Rio de Janeiro": 21, "São Gonçalo": 14, "Maricá": 41},
+		"Maricá":         {"Niterói": 43, "Rio de Janeiro": 61, "São Gonçalo": 38},
+		"São Gonçalo":    {"Rio de Janeiro": 34, "Niterói": 17, "Maricá": 38},
+		"Rio de Janeiro": {"Niterói": 20, "Maricá": 59, "São Gonçalo": 30},
+	}
+	result := internal.FindShortRoute(cities, "Maricá")
+	fmt.Println("Greedy Result:", result)
 }

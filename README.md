@@ -19,5 +19,6 @@ The algorithms currently explored in this repository include:
 - **Breadth-First Search**: Exploring nodes layer-by-layer in graphs.
 - **Dijkstra's Algorithm**: Finding shortest paths in weighted graphs.
 - **Recursion**: Examples, including factorial calculation.
+- **Greedy Algorithm**: Demonstrates a greedy approach to finding a short route between cities.
 
 Each file is designed to be a self-contained learning module, providing insights into both the algorithm's logic and the idiomatic use of Go.
